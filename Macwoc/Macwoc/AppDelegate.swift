@@ -7,7 +7,7 @@
 //
 
 import AppKit
-
+import Firebase
 
 
 @NSApplicationMain
