@@ -1,0 +1,6 @@
+framework module Pods_MacwocUITests {
+  umbrella header "Pods-MacwocUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
