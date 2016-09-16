@@ -6,7 +6,7 @@
 //  Copyright © 2016 zheref. All rights reserved.
 //
 
-import Cocoa
+import AppKit
 
 class ViewController: NSViewController {
 
@@ -16,7 +16,7 @@ class ViewController: NSViewController {
         // Do any additional setup after loading the view.
     }
 
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }

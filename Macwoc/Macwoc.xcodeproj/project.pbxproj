@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B198E551D88BBE800F6627E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B198E541D88BBE800F6627E /* LoginViewController.swift */; };
+		2B198E5A1D88C3E300F6627E /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B198E591D88C3E300F6627E /* NSViewController.swift */; };
 		2B6B3E421D5958C4001E50CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B3E411D5958C4001E50CD /* AppDelegate.swift */; };
 		2B6B3E441D5958C4001E50CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B3E431D5958C4001E50CD /* ViewController.swift */; };
 		2B6B3E471D5958C4001E50CD /* Macwoc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B3E451D5958C4001E50CD /* Macwoc.xcdatamodeld */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B198E541D88BBE800F6627E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Presentation/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		2B198E591D88C3E300F6627E /* NSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSViewController.swift; path = Helpers/Extensions/NSViewController.swift; sourceTree = "<group>"; };
 		2B6B3E3E1D5958C4001E50CD /* Macwoc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macwoc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6B3E411D5958C4001E50CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6B3E431D5958C4001E50CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B198E511D88A6FE00F6627E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2BD236671D8B5278008BE87D /* Users */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		2B198E521D88A70E00F6627E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2B6B3E4A1D5958C4001E50CD /* Main.storyboard */,
+				2B198E531D88ADB700F6627E /* Login */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		2B198E531D88ADB700F6627E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2B198E541D88BBE800F6627E /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		2B198E571D88C3B500F6627E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2B198E581D88C3C600F6627E /* Extensions */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2B198E581D88C3C600F6627E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2B198E591D88C3E300F6627E /* NSViewController.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		2B6B3E351D5958C4001E50CD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +126,7 @@
 				2B6B3E551D5958C4001E50CD /* MacwocTests */,
 				2B6B3E601D5958C4001E50CD /* MacwocUITests */,
 				2B6B3E3F1D5958C4001E50CD /* Products */,
+				2BD236691D8B5AB8008BE87D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +143,12 @@
 		2B6B3E401D5958C4001E50CD /* Macwoc */ = {
 			isa = PBXGroup;
 			children = (
+				2B198E521D88A70E00F6627E /* Presentation */,
+				2B198E511D88A6FE00F6627E /* Core */,
+				2B198E571D88C3B500F6627E /* Helpers */,
 				2B6B3E411D5958C4001E50CD /* AppDelegate.swift */,
 				2B6B3E431D5958C4001E50CD /* ViewController.swift */,
 				2B6B3E481D5958C4001E50CD /* Assets.xcassets */,
-				2B6B3E4A1D5958C4001E50CD /* Main.storyboard */,
 				2B6B3E4D1D5958C4001E50CD /* Info.plist */,
 				2B6B3E451D5958C4001E50CD /* Macwoc.xcdatamodeld */,
 			);
@@ -123,6 +171,21 @@
 				2B6B3E631D5958C4001E50CD /* Info.plist */,
 			);
 			path = MacwocUITests;
+			sourceTree = "<group>";
+		};
+		2BD236671D8B5278008BE87D /* Users */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Users;
+			sourceTree = "<group>";
+		};
+		2BD236691D8B5AB8008BE87D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BD2366A1D8B5AB8008BE87D /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +321,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B198E551D88BBE800F6627E /* LoginViewController.swift in Sources */,
 				2B6B3E441D5958C4001E50CD /* ViewController.swift in Sources */,
 				2B6B3E421D5958C4001E50CD /* AppDelegate.swift in Sources */,
+				2B198E5A1D88C3E300F6627E /* NSViewController.swift in Sources */,
 				2B6B3E471D5958C4001E50CD /* Macwoc.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
