@@ -1,0 +1,6 @@
+framework module Pods_iWoc {
+  umbrella header "Pods-iWoc-umbrella.h"
+
+  export *
+  module * { export * }
+}
