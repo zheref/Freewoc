@@ -6,7 +6,9 @@
 //  Copyright © 2016 zheref. All rights reserved.
 //
 
-import Cocoa
+import AppKit
+
+
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
